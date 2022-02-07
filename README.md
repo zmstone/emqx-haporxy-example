@@ -4,3 +4,8 @@
 
 TLS termination with cleint cert common-name used as MQTT username
 
+## Test
+
+```
+./start.sh
+```

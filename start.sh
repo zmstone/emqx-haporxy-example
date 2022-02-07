@@ -53,7 +53,7 @@ frontend emqx_tcp
    mode tcp
    option tcplog
    bind *:1883
-   # 'verify required' must be set, otherwise CN (common-name) is not sent to backend
+   # 'verify required' must be set, otherwise the client may not send its certificate
    bind *:8883 ssl crt /certs/server-bundle.pem ca-file /certs/ca.pem verify required
    default_backend emqx_tcp_back
 backend emqx_tcp_back
